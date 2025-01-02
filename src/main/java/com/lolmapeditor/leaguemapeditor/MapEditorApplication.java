@@ -17,7 +17,6 @@ public class MapEditorApplication extends Application {
         stage.setTitle("LoL Map Cover Editor");
         stage.setScene(scene);
         stage.show();
-        //giwunagiuangi
     }
 
     public static void main(String[] args) {
