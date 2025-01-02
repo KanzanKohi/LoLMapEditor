@@ -7,12 +7,14 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class MapEditorApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 1280, 720);
-        stage.setTitle("Hello!");
+        FXMLLoader fxmlLoader = new FXMLLoader(MapEditorApplication.class.getResource("map-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        MapEditorController controller = fxmlLoader.getController();
+        controller.importStage(stage);
+        stage.setTitle("LoL Map Cover Editor");
         stage.setScene(scene);
         stage.show();
     }

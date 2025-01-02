@@ -81,7 +81,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.lolmapeditor.leaguemapeditor/com.lolmapeditor.leaguemapeditor.HelloApplication
+                                com.lolmapeditor.leaguemapeditor/com.lolmapeditor.leaguemapeditor.MapEditorApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
