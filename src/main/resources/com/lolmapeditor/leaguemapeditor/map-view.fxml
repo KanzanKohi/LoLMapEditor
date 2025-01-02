@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lolmapeditor.leaguemapeditor.MapEditorController">
+   <children>
+      <Button mnemonicParsing="false" onAction="#onOpenImageButtonClick" text="Upload image" translateX="490.0" translateY="45.0" />
+      <ImageView fitHeight="279.0" fitWidth="279.0" pickOnBounds="true" preserveRatio="true" translateX="25.0" translateY="22.0">
+         <image>
+            <Image url="@1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="image_preview" fitHeight="279.0" fitWidth="279.0" pickOnBounds="true" preserveRatio="true" translateX="25.0" translateY="-258.0">
+         <image>
+            <Image url="@map.png" />
+         </image>
+      </ImageView>
+      <Button mnemonicParsing="false" onAction="#onSaveImageButtonClick" text="Save image" translateX="490.0" translateY="-505.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="300.0" opacity="0.16" stroke="BLACK" strokeType="INSIDE" translateX="15.0" translateY="-571.0" width="300.0" />
+   </children>
+</VBox>
